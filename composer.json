@@ -1,22 +1,18 @@
 {
-	"name":"bugbuster/contao-routing-app",
-	"description":"Code Beispiel für die drei Routing Arten in Contao 4",
-	"keywords":["Code sample","contao","routing"],
+	"name":"pbd-kn/contao-ajaxarticle-bundle",
+	"description":"Ajax Request liefert gerenderte Article zurück",
 	"type":"contao-bundle",
-	"homepage":"http://contao.ninja",
 	"license":"LGPL-3.0-or-later",
 	"authors":[
 		{
-			"name":"Glen Langer",
-			"homepage":"http://contao.ninja",
+			"name":"Peter Broghammer",
+			"email":"pb-contao@gmx.de",
 			"role":"Developer"
 		}
 	],
 	"support":{
-		"issues":"https://github.com/BugBuster1701/contao-routing-app/issues",
-		"irc":"irc://irc.freenode.org/contao.dev",
-		"source":"https://github.com/BugBuster1701/contao-routing-app",
-		"forum":"https://community.contao.org/de/forumdisplay.php?119-Sonstige-Erweiterungen"
+		"issues":"https://github.com/pbd-kn/contao-ajaxarticle-bundle/issues",
+		"source":"https://github.com/pbd-kn/contao-ajaxarticle-bundle"
 	},
 	"require":{
 		"php": ">=5.6.0",
@@ -28,19 +24,10 @@
 	},
 	"autoload":{
 			"psr-4": {
-					"BugBuster\\RoutingappBundle\\": "src/"
-		},
-		"classmap": [
-					"src/Resources/contao/"
-		],
-		"exclude-from-classmap": [
-					"src/Resources/contao/config/"
-		]
+					"PBDKN\\AjaxArticleBundle\\": "src/"
+		}
 	},
 	"extra":{
-		"branch-alias": {
-			"dev-develop": "2.1.x-dev"
-		},
-		"contao-manager-plugin": "BugBuster\\RoutingappBundle\\ContaoManager\\ContaoManagerPlugin"
+		"contao-manager-plugin": "PBDKN\\AjaxArticleBundle\\ContaoManager\\Plugin"
 	}
 }
