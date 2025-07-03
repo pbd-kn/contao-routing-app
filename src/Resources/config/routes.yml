@@ -1,4 +1,4 @@
-pbdkn_ajax_article.controller:
-    resource: "@PBDKNAjaxArticle/Bundle/Controller"
+pbdkn_coh.controller:
+    resource: ../../Controller
     type: annotation
 
